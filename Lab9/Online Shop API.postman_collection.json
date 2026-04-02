@@ -218,6 +218,15 @@
           "request": {
             "method": "POST",
             "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{  \r\n    \"name\": \"Зимняя куртка adidas черный\", \r\n    \"price\": 26990,\r\n    \"description\": \"Зимняя куртка adidas IX3081 — это идеальный выбор для тех, кто ценит комфорт и стиль в холодное время года.\",  \r\n    \"category\": 1,\r\n    \"count\": 1,\r\n    \"is_active\": true,\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
             "url": {
               "raw": "http://127.0.0.1:8000/api/products/",
               "protocol": "http",

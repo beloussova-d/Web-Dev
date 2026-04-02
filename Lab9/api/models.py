@@ -13,3 +13,6 @@ class Product(models.Model):
     count = models.IntegerField()
     is_active = models.BooleanField()
     category = models.ForeignKey(Category, on_delete = models.CASCADE)
+
+    def __str__(self):
+        return self.name
